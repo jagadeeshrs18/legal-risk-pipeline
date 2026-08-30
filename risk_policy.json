@@ -1,0 +1,8 @@
+{
+  "Limitation of Liability": {"base": 25, "missing": 40, "contradiction": 25},
+  "Indemnification": {"base": 20, "missing": 35, "contradiction": 25},
+  "Governing Law": {"base": 10, "missing": 20, "contradiction": 15},
+  "Termination": {"base": 15, "missing": 25, "contradiction": 20},
+  "Data Protection": {"base": 25, "missing": 45, "contradiction": 25}
+}
+

@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Legal Risk Analyzer</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body{background:#f4f7fb}
+.hero{background:linear-gradient(135deg,#132a53,#2863c7);color:#fff;border-radius:24px}
+.card{border:0;border-radius:18px;box-shadow:0 10px 35px #19345b18}
+.form-control,.form-select{padding:.7rem;border-radius:10px}
+.cat-card{height:100%;transition:transform .15s ease}
+.cat-card:hover{transform:translateY(-3px)}
+.cat-icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:1.3rem;color:#fff}
+</style></head>
+<body><main class="container py-5">
+
+<div class="hero p-4 p-md-5 mb-4">
+  <span class="badge text-bg-info mb-3">BGE + ACORD</span>
+  <h1>Legal Document Risk Analyzer</h1>
+  <p class="mb-0">Pick the section that matches your document's category, upload a searchable PDF, and get a
+  preliminary, evidence-linked risk report with plain-language suggestions to reduce risk.</p>
+</div>
+
+{% with messages=get_flashed_messages(with_categories=true) %}
+  {% for category,message in messages %}<div class="alert alert-{{category}}">{{message}}</div>{% endfor %}
+{% endwith %}
+
+<p class="text-secondary mb-3">Each box below only analyses documents of that type. If you upload the wrong
+kind of document into a section, the app will tell you which category it actually looks like instead of
+running the analysis. The <b>"Analyse as"</b> perspective changes which side's risks are scored — for
+example, a clause that's risky for a Customer is often favourable to the Vendor, and vice versa.</p>
+
+<div class="row g-4">
+
+{% set cat_meta = {
+  'Business and Commercial Contracts': {'color': '#0ea5e9', 'icon': '💼',
+          'desc': 'Employment agreements, NDAs, service agreements, and vendor/supply contracts.'},
+  'Real Estate and Property Documents': {'color': '#ea580c', 'icon': '🏠',
+          'desc': 'Rental/lease agreements and other documents transferring or securing rights to property.'},
+  'Estate Planning Documents': {'color': '#7c3aed', 'icon': '📜',
+          'desc': 'Wills, living trusts, and powers of attorney directing how assets or care are handled.'},
+  'Court and Litigation Pleadings': {'color': '#16a34a', 'icon': '⚖️',
+          'desc': 'Complaints, petitions, legal notices, and other filings in formal legal proceedings.'}
+} %}
+
+{% for cat in categories %}
+<div class="col-md-6">
+  <div class="card cat-card p-4">
+    <div class="d-flex align-items-center gap-3 mb-2">
+      <div class="cat-icon" style="background:{{cat_meta[cat].color}}">{{cat_meta[cat].icon}}</div>
+      <div><h5 class="mb-0">{{cat}}</h5></div>
+    </div>
+    <p class="text-secondary small">{{cat_meta[cat].desc}}</p>
+
+    <form action="{{url_for('analyse_upload')}}" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="category" value="{{cat}}">
+
+      {% if cat == 'Business and Commercial Contracts' %}
+      <div class="mb-3">
+        <label class="form-label small fw-semibold">Document sub-type</label>
+        <select class="form-select" name="subtype" data-role="subtype-select" onchange="updateCommercialPerspective(this)">
+          {% for st in commercial_subtypes %}<option value="{{st}}">{{st}}</option>{% endfor %}
+        </select>
+      </div>
+      {% endif %}
+
+      <div class="mb-3">
+        <input class="form-control" type="file" name="document" accept="application/pdf" required>
+        <div class="form-text">Max 20 MB. Scanned PDFs need OCR first.</div>
+      </div>
+      <div class="row g-2">
+        <div class="col-6">
+          <label class="form-label small fw-semibold">Analyse as</label>
+          <select class="form-select" name="perspective" data-role="perspective-select">
+            {% if cat == 'Business and Commercial Contracts' %}
+              {% for p in commercial_perspective_map[commercial_subtypes[0]] %}<option value="{{p}}">{{p}}</option>{% endfor %}
+            {% else %}
+              {% for p in perspective_options[cat] %}<option value="{{p}}">{{p}}</option>{% endfor %}
+            {% endif %}
+          </select>
+        </div>
+        <div class="col-6">
+          <label class="form-label small fw-semibold">Jurisdiction</label>
+          <select class="form-select" name="jurisdiction">
+            <option>India</option><option>United States</option><option>Other / Unspecified</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn btn-lg mt-3 w-100 text-white" style="background:{{cat_meta[cat].color}}" type="submit">
+        Analyse as {{cat}}
+      </button>
+    </form>
+  </div>
+</div>
+{% endfor %}
+
+</div>
+
+<p class="text-secondary small mt-4">Research prototype only. It does not replace review by a qualified legal professional.</p>
+
+<script>
+const COMMERCIAL_PERSPECTIVES = {{ commercial_perspective_map | tojson }};
+
+function updateCommercialPerspective(subtypeSelect) {
+  const card = subtypeSelect.closest("form");
+  const perspectiveSelect = card.querySelector('[data-role="perspective-select"]');
+  const options = COMMERCIAL_PERSPECTIVES[subtypeSelect.value] || [];
+  perspectiveSelect.innerHTML = options.map(p => `<option value="${p}">${p}</option>`).join("");
+}
+</script>
+</main></body></html>

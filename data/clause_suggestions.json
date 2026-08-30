@@ -1,0 +1,320 @@
+{
+  "Limitation of Liability": [
+    {
+      "issue": "The clause may impose unlimited liability.",
+      "suggested_clause": "Except for the carve-outs listed below, each party's aggregate liability arising out of or in connection with this Agreement shall not exceed the total fees paid or payable in the twelve (12) months preceding the claim.",
+      "rationale": "Caps exposure to a known, insurable figure instead of leaving liability open-ended."
+    },
+    {
+      "issue": "The clause uses broad liability language covering all losses.",
+      "suggested_clause": "Neither party shall be liable for indirect, incidental, special, or consequential losses, and each party's direct-damages liability is capped as set out in the Limitation of Liability clause.",
+      "rationale": "Narrows 'all losses' to direct damages within an agreed cap, which is the market standard."
+    },
+    {
+      "issue": "The obligation is expressed without an identifiable limitation.",
+      "suggested_clause": "This obligation is subject to the aggregate liability cap and the carve-outs (fraud, gross negligence, wilful misconduct, breach of confidentiality, and IP infringement) set out elsewhere in this Agreement.",
+      "rationale": "Ties an otherwise open-ended obligation back to a defined cap so it cannot be read as unlimited."
+    },
+    {
+      "issue": "The liability cap appears to be limited to only one month of fees.",
+      "suggested_clause": "The aggregate liability of either party shall not exceed the total fees paid or payable under this Agreement in the six (6) or twelve (12) months preceding the event giving rise to the claim.",
+      "rationale": "A one-month cap is unusually low; six-to-twelve months of fees is the common negotiated range."
+    },
+    {
+      "issue": "The liability cap is linked to only one month of fees.",
+      "suggested_clause": "The aggregate liability of either party shall not exceed the total fees paid or payable under this Agreement in the six (6) or twelve (12) months preceding the event giving rise to the claim.",
+      "rationale": "Widening the reference period brings the cap closer to a commercially reasonable level."
+    },
+    {
+      "issue": "Liability for data loss or security incidents appears to be excluded.",
+      "suggested_clause": "The liability cap for breach of the Data Protection or Confidentiality clauses, or for a data breach or security incident caused by the vendor's negligence, shall be a separate, higher cap (e.g. twice the standard cap) rather than being excluded outright.",
+      "rationale": "Data-breach liability is a core exposure for the customer and should not be disclaimed entirely."
+    },
+    {
+      "issue": "Liability for regulatory penalties appears to be excluded.",
+      "suggested_clause": "Regulatory fines or penalties directly attributable to a party's breach of applicable data-protection law shall be recoverable from that party, subject to the higher liability cap referenced above.",
+      "rationale": "Blanket exclusion of regulatory penalties shifts compliance risk unfairly onto the other party."
+    },
+    {
+      "issue": "The exclusion of indirect or consequential loss may be excessively broad.",
+      "suggested_clause": "Neither party shall be liable for indirect or consequential loss, except where such loss arises from a breach of confidentiality, data protection obligations, or wilful misconduct, which shall remain recoverable up to the applicable cap.",
+      "rationale": "Adds standard carve-outs so the exclusion does not swallow every meaningful category of loss."
+    }
+  ],
+  "Indemnification": [
+    {
+      "issue": "The customer is required to provide an indemnity.",
+      "suggested_clause": "Each party shall indemnify the other against third-party claims arising from its own breach of this Agreement, negligence, or wilful misconduct.",
+      "rationale": "Converts a one-directional customer indemnity into a mutual, fault-based obligation."
+    },
+    {
+      "issue": "The indemnity is expressly one-sided in favour of the vendor.",
+      "suggested_clause": "Each party shall indemnify and hold harmless the other party against third-party claims, losses, and expenses arising out of its breach of this Agreement or applicable law.",
+      "rationale": "Makes the indemnity reciprocal instead of protecting only the vendor."
+    },
+    {
+      "issue": "No reciprocal indemnity is provided by the other party.",
+      "suggested_clause": "Add a mirrored indemnity clause: 'The Vendor shall likewise indemnify the Customer against third-party claims arising from the Vendor's breach, negligence, or infringement of third-party intellectual property rights.'",
+      "rationale": "A one-way indemnity is a common red flag; a mirrored clause restores balance."
+    },
+    {
+      "issue": "The indemnity covers an unusually broad range of claims and losses.",
+      "suggested_clause": "The indemnifying party shall indemnify the other only for direct losses, reasonable legal costs, and damages finally awarded or settled with its consent, arising from a breach of this Agreement, third-party IP infringement, or gross negligence.",
+      "rationale": "Scopes the indemnity to specific, foreseeable categories rather than 'all claims and losses'."
+    },
+    {
+      "issue": "The indemnity extends to regulatory investigations.",
+      "suggested_clause": "The indemnity shall cover reasonable costs of responding to a regulatory investigation only where the investigation results from the indemnifying party's proven breach, and shall exclude routine regulatory inquiries.",
+      "rationale": "Limits an open-ended obligation to indemnify for any regulatory investigation, however triggered."
+    },
+    {
+      "issue": "The indemnity may apply regardless of fault.",
+      "suggested_clause": "The indemnifying party's obligation shall apply only where the claim arises from that party's breach, negligence, or wilful misconduct, and not on a strict, no-fault basis.",
+      "rationale": "Ties indemnity to fault, which is the standard commercial position, instead of strict liability."
+    },
+    {
+      "issue": "A party may control an indemnity-related decision at its sole discretion.",
+      "suggested_clause": "Decisions relating to the defence or settlement of an indemnified claim shall require the indemnified party's prior written consent, not to be unreasonably withheld, rather than being made at either party's sole discretion.",
+      "rationale": "Prevents one party from controlling settlement strategy unilaterally without consent."
+    }
+  ],
+  "Termination": [
+    {
+      "issue": "The agreement automatically renews for a lengthy additional term.",
+      "suggested_clause": "This Agreement shall automatically renew for successive periods of twelve (12) months unless either party gives written notice of non-renewal at least sixty (60) days before the end of the then-current term.",
+      "rationale": "Shortens the renewal term and notice window so the customer is not locked in unexpectedly."
+    },
+    {
+      "issue": "The customer must provide an unusually long non-renewal notice.",
+      "suggested_clause": "Either party may prevent renewal by giving written notice at least thirty (30) to sixty (60) days before the end of the then-current term.",
+      "rationale": "A 30–60 day notice window is standard; 90–180 days effectively traps the customer in the contract."
+    },
+    {
+      "issue": "The vendor may suspend or terminate immediately.",
+      "suggested_clause": "The vendor may suspend or terminate only after giving written notice of the breach and a reasonable cure period (e.g. fifteen (15) to thirty (30) days), except in cases of a security emergency or non-payment beyond the agreed grace period.",
+      "rationale": "Immediate suspension without notice is disproportionate outside genuine emergencies."
+    },
+    {
+      "issue": "Service may be suspended based on suspected misuse or delayed payment.",
+      "suggested_clause": "The vendor may suspend service for suspected misuse or delayed payment only after written notice and a reasonable opportunity (e.g. ten (10) business days) for the customer to remedy or dispute the issue in good faith.",
+      "rationale": "Requires notice and a cure window before suspension, rather than acting on mere suspicion."
+    },
+    {
+      "issue": "The customer's termination right is materially restricted.",
+      "suggested_clause": "The customer may terminate for convenience on reasonable prior written notice (e.g. thirty (30) to sixty (60) days), in addition to termination for the vendor's uncured material breach.",
+      "rationale": "Restores a meaningful exit right instead of leaving the customer bound with no real way out."
+    },
+    {
+      "issue": "The clause imposes a lengthy cure period before termination.",
+      "suggested_clause": "Termination for material breach shall be permitted after a cure period of fifteen (15) to thirty (30) days from written notice of the breach.",
+      "rationale": "A 60–90 day cure period unreasonably delays the non-breaching party's ability to exit."
+    },
+    {
+      "issue": "A party may terminate without cause or adequate notice.",
+      "suggested_clause": "Either party may terminate this Agreement for convenience upon at least thirty (30) days' prior written notice, or immediately for the other party's uncured material breach.",
+      "rationale": "Requires reasonable advance notice for a no-cause termination instead of allowing an abrupt exit."
+    },
+    {
+      "issue": "The clause permits immediate termination.",
+      "suggested_clause": "Termination shall take effect after written notice and, save for cases of fraud, insolvency, or a security emergency, a cure period of at least fifteen (15) days.",
+      "rationale": "Immediate termination should be reserved for serious, defined circumstances, not the default rule."
+    }
+  ],
+  "Governing Law": [
+    {
+      "issue": "The agreement requires disputes to be handled in a foreign jurisdiction.",
+      "suggested_clause": "This Agreement shall be governed by the laws of India, and the courts at [City], India shall have exclusive jurisdiction, or disputes shall be referred to arbitration under the Arbitration and Conciliation Act, 1996, seated in India.",
+      "rationale": "Avoids the cost and inconvenience of litigating in a foreign court for an Indian party."
+    },
+    {
+      "issue": "The selected governing law may create additional cost for an Indian party.",
+      "suggested_clause": "Consider governing law and jurisdiction clauses that specify the laws of India and a domestic forum or seat of arbitration, or at minimum a neutral, mutually convenient forum.",
+      "rationale": "Keeps dispute-resolution costs proportionate for the party based in India."
+    }
+  ],
+  "Confidentiality": [
+    {
+      "issue": "The confidentiality obligation continues indefinitely.",
+      "suggested_clause": "The confidentiality obligations shall survive termination for a period of three (3) to five (5) years, except for trade secrets, which shall remain confidential for as long as they retain that status.",
+      "rationale": "A fixed survival period is enforceable and reasonable; 'in perpetuity' is often resisted or unenforceable."
+    },
+    {
+      "issue": "The definition of confidential information may be excessively broad.",
+      "suggested_clause": "'Confidential Information' means information disclosed by a party that is marked confidential, or that a reasonable person would understand to be confidential given its nature and the circumstances of disclosure.",
+      "rationale": "Adds an objective marker/reasonableness test instead of treating literally all information as confidential."
+    },
+    {
+      "issue": "The confidentiality obligation does not appear to contain exceptions.",
+      "suggested_clause": "The obligations above do not apply to information that is or becomes publicly available through no fault of the receiving party, was already known to it, is independently developed, or is required to be disclosed by law.",
+      "rationale": "Standard carve-outs prevent the clause from criminalising legitimate, unavoidable disclosures."
+    },
+    {
+      "issue": "The confidentiality obligation may be one-sided.",
+      "suggested_clause": "Both parties shall keep the other's Confidential Information confidential and use it only for the purposes of this Agreement, on the same terms and for the same duration.",
+      "rationale": "Makes confidentiality mutual so both parties' sensitive information receives equal protection."
+    }
+  ],
+  "Intellectual Property": [
+    {
+      "issue": "The clause may assign all intellectual property to one party.",
+      "suggested_clause": "Each party retains ownership of its pre-existing intellectual property. IP created specifically for the customer under this Agreement and paid for in full shall vest in the customer, subject to the vendor retaining a licence to reuse its general know-how.",
+      "rationale": "Distinguishes background IP from newly created, paid-for deliverables instead of assigning everything."
+    },
+    {
+      "issue": "The licence appears irrevocable and perpetual.",
+      "suggested_clause": "The licence granted shall be non-exclusive, worldwide, and shall continue for the term of this Agreement plus any period reasonably required for transition, rather than being irrevocable and perpetual.",
+      "rationale": "Ties the licence duration to the relationship instead of granting rights that outlive it indefinitely."
+    },
+    {
+      "issue": "Customer data or related rights may be assigned to the vendor.",
+      "suggested_clause": "The customer retains ownership of all customer data. The vendor is granted a limited licence to process such data solely to provide the services under this Agreement.",
+      "rationale": "Customer data ownership should stay with the customer; the vendor only needs a processing licence."
+    },
+    {
+      "issue": "The vendor retains broad rights over project outputs or deliverables.",
+      "suggested_clause": "Ownership of deliverables specifically created for and paid for by the customer shall vest in the customer upon full payment, subject to the vendor's licence to reuse its pre-existing tools, templates, and generic know-how.",
+      "rationale": "Ensures the paying customer owns what it commissioned, while letting the vendor reuse generic assets."
+    }
+  ],
+  "Data Protection": [
+    {
+      "issue": "Personal data may be shared broadly with third parties.",
+      "suggested_clause": "Personal data shall be shared with third parties only where necessary to provide the services, under a written data-processing agreement imposing equivalent protections, and never sold or shared for unrelated purposes.",
+      "rationale": "Restricts sharing to a defined, contractually protected purpose instead of unrestricted third-party access."
+    },
+    {
+      "issue": "Personal data may be processed or shared without consent.",
+      "suggested_clause": "Personal data shall be processed only on documented instructions from the data controller and in compliance with applicable data-protection law, including obtaining consent or another valid legal basis where required.",
+      "rationale": "Requires a lawful basis for processing instead of allowing processing without consent or authority."
+    },
+    {
+      "issue": "The vendor disclaims liability for data-security incidents.",
+      "suggested_clause": "The vendor shall implement reasonable technical and organisational security measures and shall remain liable, up to the higher liability cap, for losses arising from its failure to do so, including a data breach caused by its negligence.",
+      "rationale": "Data-security liability should not be disclaimed outright; it should be tied to a reasonable standard of care."
+    },
+    {
+      "issue": "The clause may permit indefinite retention of personal data.",
+      "suggested_clause": "Personal data shall be retained only for as long as necessary to fulfil the purpose of processing or as required by law, and shall be securely deleted or anonymised thereafter (e.g. within 90 days of contract termination).",
+      "rationale": "Adds a defined retention and deletion period, consistent with data-minimisation principles."
+    }
+  ],
+  "Payment": [
+    {
+      "issue": "Payments are described as non-refundable.",
+      "suggested_clause": "Fees are non-refundable except where the agreement is terminated due to the vendor's uncured material breach or failure to deliver the agreed services, in which case a pro-rata refund shall apply.",
+      "rationale": "Keeps fees non-refundable in the ordinary course, but restores fairness where the vendor is at fault."
+    },
+    {
+      "issue": "One party may unilaterally revise the fees.",
+      "suggested_clause": "Fees may only be revised with at least sixty (60) days' prior written notice, and any increase above [X]% per annum shall entitle the customer to terminate without penalty.",
+      "rationale": "Limits unilateral price changes and gives the customer an exit right if increases are excessive."
+    },
+    {
+      "issue": "The late-payment interest rate is high when calculated monthly.",
+      "suggested_clause": "Late payments shall accrue interest at a reasonable rate (e.g. 1–1.5% per month or the maximum permitted by law, whichever is lower), calculated on the overdue amount only.",
+      "rationale": "Brings the interest rate in line with commercially reasonable, legally defensible levels."
+    },
+    {
+      "issue": "Late-payment interest is compounded monthly.",
+      "suggested_clause": "Late-payment interest shall accrue on a simple (non-compounding) basis on the overdue amount from the due date until payment.",
+      "rationale": "Simple interest avoids the sharply escalating cost that monthly compounding produces."
+    },
+    {
+      "issue": "Fees remain non-refundable even where termination results from service failure.",
+      "suggested_clause": "Where this Agreement is terminated due to the vendor's failure to meet agreed service levels or a material breach, the customer shall be entitled to a pro-rata refund of fees paid for services not yet rendered.",
+      "rationale": "Ensures the customer isn't forced to pay in full for a service that the vendor failed to deliver."
+    }
+  ],
+  "Warranty": [
+    {
+      "issue": "The services are provided on an 'as-is' basis.",
+      "suggested_clause": "The vendor warrants that the services shall be performed with reasonable skill and care and shall materially conform to the agreed specifications, rather than being provided strictly 'as is'.",
+      "rationale": "A minimum performance warranty gives the customer recourse if the service is defective."
+    },
+    {
+      "issue": "The services are provided only on an 'as-available' basis.",
+      "suggested_clause": "The vendor shall use commercially reasonable efforts to make the services available in accordance with the agreed service levels, rather than providing them on a purely 'as-available' basis.",
+      "rationale": "Ties availability to a measurable commitment instead of disclaiming it altogether."
+    },
+    {
+      "issue": "The vendor disclaims all warranties.",
+      "suggested_clause": "The vendor warrants that the services will be performed with reasonable skill and care, will materially conform to the specification, and will not infringe third-party intellectual property rights, notwithstanding any other disclaimer in this Agreement.",
+      "rationale": "Preserves a baseline set of warranties instead of leaving the customer with no assurance at all."
+    },
+    {
+      "issue": "Important warranties concerning accuracy, fitness or non-infringement are excluded.",
+      "suggested_clause": "The vendor warrants that the deliverables are reasonably fit for the purpose described in this Agreement, materially accurate, and do not infringe third-party intellectual property rights.",
+      "rationale": "Restores core warranties that a customer would reasonably expect for a paid service."
+    },
+    {
+      "issue": "The customer assumes sole responsibility for decisions based on system outputs.",
+      "suggested_clause": "The vendor warrants the outputs are generated using reasonable care and accepted methodologies; the customer is responsible for independently validating outputs before relying on them for material decisions.",
+      "rationale": "Balances vendor accountability for quality with the customer's duty to verify before relying on outputs."
+    }
+  ],
+  "Data Return and Exit": [
+    {
+      "issue": "The vendor may delete customer data immediately after termination.",
+      "suggested_clause": "Following termination, the vendor shall retain customer data in a retrievable form for at least thirty (30) days to allow export, and shall securely delete it thereafter unless a longer period is required by law.",
+      "rationale": "Gives the customer a real window to retrieve its data instead of losing it immediately."
+    },
+    {
+      "issue": "Customer data may be deleted without a reasonable retrieval period.",
+      "suggested_clause": "The vendor shall provide the customer at least thirty (30) days after termination to export its data in a usable format before deletion.",
+      "rationale": "A defined retrieval period is standard practice and prevents accidental, irreversible data loss."
+    },
+    {
+      "issue": "Data export or transition support is not guaranteed.",
+      "suggested_clause": "Upon request, the vendor shall provide reasonable transition assistance and data export support for a defined period (e.g. up to sixty (60) days) following termination.",
+      "rationale": "Converts a discretionary, unguaranteed courtesy into a committed exit-support obligation."
+    },
+    {
+      "issue": "Exit support may be charged at unspecified future rates.",
+      "suggested_clause": "Exit and transition assistance for the first thirty (30) to sixty (60) days shall be provided at no additional cost, or at rates specified in this Agreement rather than at then-current, unspecified rates.",
+      "rationale": "Fixes the cost of exit support in advance so it cannot be used to penalise a departing customer."
+    },
+    {
+      "issue": "The agreement does not guarantee a usable data-export format.",
+      "suggested_clause": "The vendor shall export customer data in a commonly used, machine-readable format (e.g. CSV, JSON, or XML) upon termination or at the customer's reasonable request.",
+      "rationale": "Guarantees the data is actually usable elsewhere rather than delivered in a proprietary or unusable format."
+    },
+    {
+      "issue": "No transition timetable is guaranteed.",
+      "suggested_clause": "The parties shall agree a transition timetable within fifteen (15) days of notice of termination, setting out key milestones and responsibilities for an orderly handover.",
+      "rationale": "A defined timetable prevents an open-ended, unmanaged transition process."
+    }
+  ],
+  "Service Levels": [
+    {
+      "issue": "The agreement provides no measurable service level.",
+      "suggested_clause": "The vendor shall meet the service levels set out in Schedule [X], including defined response and resolution times for support requests, measured on a monthly basis.",
+      "rationale": "Introduces objective, measurable commitments the customer can hold the vendor to."
+    },
+    {
+      "issue": "The agreement does not guarantee minimum availability.",
+      "suggested_clause": "The vendor shall use commercially reasonable efforts to maintain at least 99.5% monthly uptime for the service, excluding scheduled maintenance windows notified in advance.",
+      "rationale": "Sets a concrete uptime commitment instead of leaving availability entirely open-ended."
+    },
+    {
+      "issue": "Service credits are stated as the customer's sole remedy.",
+      "suggested_clause": "Service credits shall be available for service-level failures, without prejudice to the customer's right to terminate for repeated or material failures and to claim damages within the agreed liability cap.",
+      "rationale": "Prevents service credits from becoming the customer's only recourse for chronic underperformance."
+    }
+  ],
+  "Termination and Eviction": [
+    {
+      "issue": "The landlord may terminate the tenancy or evict the tenant without adequate notice.",
+      "suggested_clause": "Require written notice and a reasonable notice period (e.g. 30–60 days) before termination, and limit eviction to a lawful process (court order/due process) rather than allowing immediate, unilateral eviction.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    }
+  ],
+  "Rent and Security Deposit": [
+    {
+      "issue": "The security deposit is described as non-refundable regardless of the condition of the property.",
+      "suggested_clause": "State a clear, itemised refund process for the security deposit (e.g. within 30–60 days, less documented deductions for damage beyond normal wear and tear) rather than treating it as non-refundable or forfeitable at the landlord's discretion.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    }
+  ]
+}
