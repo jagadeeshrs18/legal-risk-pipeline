@@ -227,7 +227,7 @@ ESTATE_CLAUSE_RULES = {
     "Witness and Execution": {
         "required": True,
         "risk": [
-            (r"(?:only|one) witness.{0,40}sign",
+            (r"(?:only|one) witness.{0,40}sign|sign(?:ed)?.{0,40}(?:only|one) witness|witnessed by (?:only )?one witness",
              "Only one witness appears to have signed, which may not satisfy statutory execution requirements.", 20),
         ],
         "protective": [

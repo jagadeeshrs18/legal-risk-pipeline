@@ -161,7 +161,11 @@ def word_report(report_id):
     doc.add_paragraph(f"Pages: {r['pages']} | Analysed clauses: {r['clause_count']}")
     doc.add_heading("Missing protections", 1)
     if not r["missing"]: doc.add_paragraph("No required provision was flagged as missing.")
-    for x in r["missing"]: doc.add_paragraph(f"{x['type']}: {x['reason']} (+{x['score']})", style="List Bullet")
+    for x in r["missing"]:
+        doc.add_paragraph(f"{x['type']}: {x['reason']} (+{x['score']})", style="List Bullet")
+        if x.get("suggestion"):
+            doc.add_paragraph(f"Suggested clause to add: {x['suggestion']['suggested_clause']}")
+            doc.add_paragraph(f"Why: {x['suggestion']['rationale']}")
     doc.add_heading("Clause findings", 1)
     for x in r["findings"]:
         if x.get("favors_you"):

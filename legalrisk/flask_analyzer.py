@@ -10,7 +10,7 @@ import fitz
 from sentence_transformers import SentenceTransformer
 
 from .beir import load_beir
-from .suggestions import get_suggestions_for_hits
+from .suggestions import get_suggestion, get_suggestions_for_hits
 from .domain_rules import (
     REAL_ESTATE_HEADING_ALIASES, REAL_ESTATE_CLAUSE_RULES,
     ESTATE_HEADING_ALIASES, ESTATE_CLAUSE_RULES,
@@ -1117,14 +1117,13 @@ def analyse(
             continue
 
         rule = clause_rules[clause_type]
+        reason = f"No identifiable {clause_type} provision was detected."
 
         missing.append({
             "type": clause_type,
             "score": rule["missing_points"],
-            "reason": (
-                f"No identifiable {clause_type} "
-                "provision was detected."
-            ),
+            "reason": reason,
+            "suggestion": get_suggestion(clause_type, reason),
         })
 
     # Only actual risk findings are used in scoring.

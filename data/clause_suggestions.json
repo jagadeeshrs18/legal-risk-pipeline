@@ -76,6 +76,12 @@
       "issue": "A party may control an indemnity-related decision at its sole discretion.",
       "suggested_clause": "Decisions relating to the defence or settlement of an indemnified claim shall require the indemnified party's prior written consent, not to be unreasonably withheld, rather than being made at either party's sole discretion.",
       "rationale": "Prevents one party from controlling settlement strategy unilaterally without consent."
+    },
+    {
+      "issue": "No identifiable Indemnification provision was detected.",
+      "suggested_clause": "Make the indemnity mutual and fault-based: each party indemnifies the other only for losses caused by its own breach, negligence, or wilful misconduct, subject to prompt notice and a right to participate in the defence.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Termination": [
@@ -130,6 +136,12 @@
       "issue": "The selected governing law may create additional cost for an Indian party.",
       "suggested_clause": "Consider governing law and jurisdiction clauses that specify the laws of India and a domestic forum or seat of arbitration, or at minimum a neutral, mutually convenient forum.",
       "rationale": "Keeps dispute-resolution costs proportionate for the party based in India."
+    },
+    {
+      "issue": "No identifiable Governing Law provision was detected.",
+      "suggested_clause": "Specify the laws of India and a domestic court or arbitration seat so disputes can be resolved without the cost of a foreign forum.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Confidentiality": [
@@ -152,6 +164,12 @@
       "issue": "The confidentiality obligation may be one-sided.",
       "suggested_clause": "Both parties shall keep the other's Confidential Information confidential and use it only for the purposes of this Agreement, on the same terms and for the same duration.",
       "rationale": "Makes confidentiality mutual so both parties' sensitive information receives equal protection."
+    },
+    {
+      "issue": "No identifiable Confidentiality provision was detected.",
+      "suggested_clause": "Make confidentiality mutual, add standard exceptions (already public, independently developed, required by law), and set a fixed survival period (e.g. 3–5 years) instead of an indefinite one.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Intellectual Property": [
@@ -174,6 +192,12 @@
       "issue": "The vendor retains broad rights over project outputs or deliverables.",
       "suggested_clause": "Ownership of deliverables specifically created for and paid for by the customer shall vest in the customer upon full payment, subject to the vendor's licence to reuse its pre-existing tools, templates, and generic know-how.",
       "rationale": "Ensures the paying customer owns what it commissioned, while letting the vendor reuse generic assets."
+    },
+    {
+      "issue": "No identifiable Intellectual Property provision was detected.",
+      "suggested_clause": "Separate pre-existing/background IP (retained by its owner) from newly created, paid-for deliverables (assigned to the paying customer), and grant only the licences actually needed to use the service.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Data Protection": [
@@ -196,6 +220,12 @@
       "issue": "The clause may permit indefinite retention of personal data.",
       "suggested_clause": "Personal data shall be retained only for as long as necessary to fulfil the purpose of processing or as required by law, and shall be securely deleted or anonymised thereafter (e.g. within 90 days of contract termination).",
       "rationale": "Adds a defined retention and deletion period, consistent with data-minimisation principles."
+    },
+    {
+      "issue": "No identifiable Data Protection provision was detected.",
+      "suggested_clause": "Require a lawful basis for processing, limit third-party sharing to what is necessary under an equivalent data-processing agreement, set a defined retention/deletion period, and keep security-incident liability tied to a reasonable standard of care.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Payment": [
@@ -223,6 +253,12 @@
       "issue": "Fees remain non-refundable even where termination results from service failure.",
       "suggested_clause": "Where this Agreement is terminated due to the vendor's failure to meet agreed service levels or a material breach, the customer shall be entitled to a pro-rata refund of fees paid for services not yet rendered.",
       "rationale": "Ensures the customer isn't forced to pay in full for a service that the vendor failed to deliver."
+    },
+    {
+      "issue": "No identifiable Payment provision was detected.",
+      "suggested_clause": "Limit fee increases and late-payment interest to reasonable, clearly stated figures, require notice before any change, and allow a pro-rata refund where termination results from the other party's failure to perform.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Warranty": [
@@ -250,6 +286,12 @@
       "issue": "The customer assumes sole responsibility for decisions based on system outputs.",
       "suggested_clause": "The vendor warrants the outputs are generated using reasonable care and accepted methodologies; the customer is responsible for independently validating outputs before relying on them for material decisions.",
       "rationale": "Balances vendor accountability for quality with the customer's duty to verify before relying on outputs."
+    },
+    {
+      "issue": "No identifiable Warranty provision was detected.",
+      "suggested_clause": "Include a baseline warranty (reasonable skill and care, conformance to specification, non-infringement) rather than disclaiming all warranties or providing the service strictly 'as is'.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Data Return and Exit": [
@@ -282,6 +324,12 @@
       "issue": "No transition timetable is guaranteed.",
       "suggested_clause": "The parties shall agree a transition timetable within fifteen (15) days of notice of termination, setting out key milestones and responsibilities for an orderly handover.",
       "rationale": "A defined timetable prevents an open-ended, unmanaged transition process."
+    },
+    {
+      "issue": "No identifiable Data Return and Exit provision was detected.",
+      "suggested_clause": "Guarantee a minimum data-retrieval window after termination (e.g. 30 days), export in a common machine-readable format, and fix the timetable/cost of transition assistance in advance.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Service Levels": [
@@ -299,6 +347,12 @@
       "issue": "Service credits are stated as the customer's sole remedy.",
       "suggested_clause": "Service credits shall be available for service-level failures, without prejudice to the customer's right to terminate for repeated or material failures and to claim damages within the agreed liability cap.",
       "rationale": "Prevents service credits from becoming the customer's only recourse for chronic underperformance."
+    },
+    {
+      "issue": "No identifiable Service Levels provision was detected.",
+      "suggested_clause": "Add measurable commitments (uptime percentage, response/resolution times) and ensure service credits are not the customer's only remedy for repeated failures.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Termination and Eviction": [
@@ -313,6 +367,62 @@
     {
       "issue": "The security deposit is described as non-refundable regardless of the condition of the property.",
       "suggested_clause": "State a clear, itemised refund process for the security deposit (e.g. within 30–60 days, less documented deductions for damage beyond normal wear and tear) rather than treating it as non-refundable or forfeitable at the landlord's discretion.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    }
+  ],
+  "Executor and Administration": [
+    {
+      "issue": "The executor may act without providing an accounting to beneficiaries.",
+      "suggested_clause": "Require the executor to provide a periodic accounting to beneficiaries and consider naming a co-executor or requiring a bond, rather than granting unchecked, unaccountable discretion.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    }
+  ],
+  "Beneficiaries and Bequests": [
+    {
+      "issue": "No identifiable Beneficiaries and Bequests provision was detected.",
+      "suggested_clause": "Name contingent (backup) beneficiaries for each bequest in case a primary beneficiary predeceases the testator, and specify how the residuary estate should be divided rather than leaving it to discretion.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    }
+  ],
+  "Revocation": [
+    {
+      "issue": "No identifiable Revocation provision was detected.",
+      "suggested_clause": "Include an express revocation clause stating that all prior wills and codicils are revoked, to avoid conflicting instructions across multiple documents.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    }
+  ],
+  "Limitation Period": [
+    {
+      "issue": "The claim may be time-barred under the applicable statute of limitations.",
+      "suggested_clause": "Plead the specific date the cause of action arose and confirm the filing falls within the applicable limitation period, or explain any exception that saves the claim.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    }
+  ],
+  "Relief Sought": [
+    {
+      "issue": "The relief sought does not specify a damages amount, which may weaken enforceability.",
+      "suggested_clause": "State the specific relief sought (e.g. a quantified damages figure, specific performance, or a named declaration) rather than leaving the prayer vague or unspecified.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    }
+  ],
+  "Parties and Jurisdiction": [
+    {
+      "issue": "No identifiable Parties and Jurisdiction provision was detected.",
+      "suggested_clause": "Clearly identify each party's full name, address, and role, and plead the specific facts establishing why this court has jurisdiction over the matter.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    }
+  ],
+  "Witness and Execution": [
+    {
+      "issue": "Only one witness appears to have signed, which may not satisfy statutory execution requirements.",
+      "suggested_clause": "Ensure execution follows the applicable jurisdiction's formalities — typically two independent witnesses and/or notarisation — rather than a single witness.",
       "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
       "source": "auto-generated"
     }
