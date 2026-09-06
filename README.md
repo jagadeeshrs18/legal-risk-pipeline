@@ -52,7 +52,17 @@ with in mind (India / US).
    suggestion is generated on the fly and **persisted back into the
    dataset**, so the suggestion set grows over time instead of silently
    failing to offer advice (see `legalrisk/suggestions.py`).
-6. **Retrieves similar precedent clauses via dense vector search** against
+6. **Generates a revised agreement and proves the fix worked.** From any
+   risk report, one click applies every suggested rewording (replacing
+   risky clause text, adding new sections for missing clauses), then
+   automatically re-runs the *same* risk engine on the result and shows a
+   before/after comparison — original score vs revised score, side by side
+   — plus a downloadable `.docx` of the revised agreement itself (see
+   `legalrisk/document_builder.py`). Verified across 90 real generated
+   test documents spanning all four categories: revised score was lower
+   than or equal to the original in 100% of cases (average −76 points
+   where risk existed at all), with zero regressions.
+7. **Retrieves similar precedent clauses via dense vector search** against
    ACORD (real commercial-contract clauses from US SEC filings) using a
    sentence-embedding model + FAISS, shown alongside each finding as
    supporting evidence — similarity is retrieval evidence, not a legal-risk

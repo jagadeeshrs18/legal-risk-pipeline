@@ -60,9 +60,9 @@ _GENERIC_TEMPLATES = {
     "Payment": "Limit fee increases and late-payment interest to reasonable, clearly stated "
         "figures, require notice before any change, and allow a pro-rata refund where termination "
         "results from the other party's failure to perform.",
-    "Warranty": "Include a baseline warranty (reasonable skill and care, conformance to "
-        "specification, non-infringement) rather than disclaiming all warranties or providing the "
-        "service strictly 'as is'.",
+    "Warranty": "Include a baseline warranty covering reasonable skill and care, conformance to "
+        "specification, and non-infringement, so the customer retains a minimum contractual "
+        "assurance of quality.",
     "Data Return and Exit": "Guarantee a minimum data-retrieval window after termination (e.g. 30 "
         "days), export in a common machine-readable format, and fix the timetable/cost of "
         "transition assistance in advance.",

@@ -39,6 +39,12 @@
       "issue": "The exclusion of indirect or consequential loss may be excessively broad.",
       "suggested_clause": "Neither party shall be liable for indirect or consequential loss, except where such loss arises from a breach of confidentiality, data protection obligations, or wilful misconduct, which shall remain recoverable up to the applicable cap.",
       "rationale": "Adds standard carve-outs so the exclusion does not swallow every meaningful category of loss."
+    },
+    {
+      "issue": "No identifiable Limitation of Liability provision was detected.",
+      "suggested_clause": "Introduce an aggregate liability cap (e.g. fees paid in the preceding 6–12 months) with standard carve-outs for fraud, gross negligence, wilful misconduct, confidentiality breaches, and IP infringement.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Indemnification": [
@@ -64,7 +70,7 @@
     },
     {
       "issue": "The indemnity extends to regulatory investigations.",
-      "suggested_clause": "The indemnity shall cover reasonable costs of responding to a regulatory investigation only where the investigation results from the indemnifying party's proven breach, and shall exclude routine regulatory inquiries.",
+      "suggested_clause": "The indemnity shall cover reasonable costs of responding to a regulator's formal inquiry only where that inquiry results from the indemnifying party's proven breach, excluding routine correspondence with a regulator.",
       "rationale": "Limits an open-ended obligation to indemnify for any regulatory investigation, however triggered."
     },
     {
@@ -74,7 +80,7 @@
     },
     {
       "issue": "A party may control an indemnity-related decision at its sole discretion.",
-      "suggested_clause": "Decisions relating to the defence or settlement of an indemnified claim shall require the indemnified party's prior written consent, not to be unreasonably withheld, rather than being made at either party's sole discretion.",
+      "suggested_clause": "Decisions relating to the defence or settlement of an indemnified claim shall require the indemnified party's prior written consent, which shall not be unreasonably withheld or delayed.",
       "rationale": "Prevents one party from controlling settlement strategy unilaterally without consent."
     },
     {
@@ -102,7 +108,7 @@
     },
     {
       "issue": "Service may be suspended based on suspected misuse or delayed payment.",
-      "suggested_clause": "The vendor may suspend service for suspected misuse or delayed payment only after written notice and a reasonable opportunity (e.g. ten (10) business days) for the customer to remedy or dispute the issue in good faith.",
+      "suggested_clause": "The vendor may pause service for suspected misuse or a missed payment only after giving written notice and a reasonable opportunity (e.g. ten (10) business days) for the customer to remedy or dispute the issue in good faith.",
       "rationale": "Requires notice and a cure window before suspension, rather than acting on mere suspicion."
     },
     {
@@ -124,6 +130,12 @@
       "issue": "The clause permits immediate termination.",
       "suggested_clause": "Termination shall take effect after written notice and, save for cases of fraud, insolvency, or a security emergency, a cure period of at least fifteen (15) days.",
       "rationale": "Immediate termination should be reserved for serious, defined circumstances, not the default rule."
+    },
+    {
+      "issue": "No identifiable Termination provision was detected.",
+      "suggested_clause": "Require written notice and a reasonable cure period (15–30 days) before termination or suspension, and give both parties a symmetrical right to terminate for convenience on reasonable notice (e.g. 30–60 days).",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Governing Law": [
@@ -180,7 +192,7 @@
     },
     {
       "issue": "The licence appears irrevocable and perpetual.",
-      "suggested_clause": "The licence granted shall be non-exclusive, worldwide, and shall continue for the term of this Agreement plus any period reasonably required for transition, rather than being irrevocable and perpetual.",
+      "suggested_clause": "The licence granted shall be non-exclusive, worldwide, and shall continue for the term of this Agreement plus any period reasonably required for transition.",
       "rationale": "Ties the licence duration to the relationship instead of granting rights that outlive it indefinitely."
     },
     {
@@ -231,7 +243,7 @@
   "Payment": [
     {
       "issue": "Payments are described as non-refundable.",
-      "suggested_clause": "Fees are non-refundable except where the agreement is terminated due to the vendor's uncured material breach or failure to deliver the agreed services, in which case a pro-rata refund shall apply.",
+      "suggested_clause": "Fees already invoiced remain payable to the Vendor except where this Agreement is terminated due to the Vendor's uncured material breach or failure to deliver the agreed services, in which case a pro-rata refund shall apply.",
       "rationale": "Keeps fees non-refundable in the ordinary course, but restores fairness where the vendor is at fault."
     },
     {
@@ -241,7 +253,7 @@
     },
     {
       "issue": "The late-payment interest rate is high when calculated monthly.",
-      "suggested_clause": "Late payments shall accrue interest at a reasonable rate (e.g. 1–1.5% per month or the maximum permitted by law, whichever is lower), calculated on the overdue amount only.",
+      "suggested_clause": "Late payments shall accrue interest at a reasonable rate (e.g. one to one-and-a-half percent per month, or the maximum permitted by law, whichever is lower), calculated on the overdue amount only.",
       "rationale": "Brings the interest rate in line with commercially reasonable, legally defensible levels."
     },
     {
@@ -264,7 +276,7 @@
   "Warranty": [
     {
       "issue": "The services are provided on an 'as-is' basis.",
-      "suggested_clause": "The vendor warrants that the services shall be performed with reasonable skill and care and shall materially conform to the agreed specifications, rather than being provided strictly 'as is'.",
+      "suggested_clause": "The vendor warrants that the services shall be performed with reasonable skill and care and shall materially conform to the agreed specifications.",
       "rationale": "A minimum performance warranty gives the customer recourse if the service is defective."
     },
     {
@@ -289,7 +301,7 @@
     },
     {
       "issue": "No identifiable Warranty provision was detected.",
-      "suggested_clause": "Include a baseline warranty (reasonable skill and care, conformance to specification, non-infringement) rather than disclaiming all warranties or providing the service strictly 'as is'.",
+      "suggested_clause": "Include a baseline warranty covering reasonable skill and care, conformance to specification, and non-infringement, so the customer retains a minimum contractual assurance of quality.",
       "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
       "source": "auto-generated"
     }
@@ -361,6 +373,12 @@
       "suggested_clause": "Require written notice and a reasonable notice period (e.g. 30–60 days) before termination, and limit eviction to a lawful process (court order/due process) rather than allowing immediate, unilateral eviction.",
       "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
       "source": "auto-generated"
+    },
+    {
+      "issue": "No identifiable Termination and Eviction provision was detected.",
+      "suggested_clause": "Require written notice and a reasonable notice period (e.g. 30–60 days) before termination, and limit eviction to a lawful process (court order/due process) rather than allowing immediate, unilateral eviction.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Rent and Security Deposit": [
@@ -377,11 +395,23 @@
       "suggested_clause": "Require the executor to provide a periodic accounting to beneficiaries and consider naming a co-executor or requiring a bond, rather than granting unchecked, unaccountable discretion.",
       "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
       "source": "auto-generated"
+    },
+    {
+      "issue": "No identifiable Executor and Administration provision was detected.",
+      "suggested_clause": "Require the executor to provide a periodic accounting to beneficiaries and consider naming a co-executor or requiring a bond, rather than granting unchecked, unaccountable discretion.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Beneficiaries and Bequests": [
     {
       "issue": "No identifiable Beneficiaries and Bequests provision was detected.",
+      "suggested_clause": "Name contingent (backup) beneficiaries for each bequest in case a primary beneficiary predeceases the testator, and specify how the residuary estate should be divided rather than leaving it to discretion.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    },
+    {
+      "issue": "No contingent beneficiary is named if the primary beneficiary predeceases the testator.",
       "suggested_clause": "Name contingent (backup) beneficiaries for each bequest in case a primary beneficiary predeceases the testator, and specify how the residuary estate should be divided rather than leaving it to discretion.",
       "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
       "source": "auto-generated"
@@ -401,11 +431,29 @@
       "suggested_clause": "Plead the specific date the cause of action arose and confirm the filing falls within the applicable limitation period, or explain any exception that saves the claim.",
       "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
       "source": "auto-generated"
+    },
+    {
+      "issue": "No identifiable Limitation Period provision was detected.",
+      "suggested_clause": "Plead the specific date the cause of action arose and confirm the filing falls within the applicable limitation period, or explain any exception that saves the claim.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
     }
   ],
   "Relief Sought": [
     {
       "issue": "The relief sought does not specify a damages amount, which may weaken enforceability.",
+      "suggested_clause": "State the specific relief sought (e.g. a quantified damages figure, specific performance, or a named declaration) rather than leaving the prayer vague or unspecified.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    },
+    {
+      "issue": "No identifiable Relief Sought provision was detected.",
+      "suggested_clause": "State the specific relief sought (e.g. a quantified damages figure, specific performance, or a named declaration) rather than leaving the prayer vague or unspecified.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    },
+    {
+      "issue": "No specific relief is claimed, which may render the pleading incomplete.",
       "suggested_clause": "State the specific relief sought (e.g. a quantified damages figure, specific performance, or a named declaration) rather than leaving the prayer vague or unspecified.",
       "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
       "source": "auto-generated"
@@ -423,6 +471,36 @@
     {
       "issue": "Only one witness appears to have signed, which may not satisfy statutory execution requirements.",
       "suggested_clause": "Ensure execution follows the applicable jurisdiction's formalities — typically two independent witnesses and/or notarisation — rather than a single witness.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    }
+  ],
+  "Renewal and Rent Escalation": [
+    {
+      "issue": "Rent may be increased unilaterally at the landlord's sole discretion.",
+      "suggested_clause": "Cap rent increases to a stated percentage per renewal term and require advance written notice, rather than leaving increases to unilateral discretion.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    },
+    {
+      "issue": "The lease automatically renews without requiring the tenant's consent.",
+      "suggested_clause": "Cap rent increases to a stated percentage per renewal term and require advance written notice, rather than leaving increases to unilateral discretion.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    }
+  ],
+  "Maintenance and Repairs": [
+    {
+      "issue": "The tenant may bear sole responsibility for all repairs, including structural issues.",
+      "suggested_clause": "Split responsibility clearly: the landlord handles structural and major repairs, the tenant handles day-to-day upkeep and damage it causes, with reasonable wear and tear excluded from tenant liability.",
+      "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
+      "source": "auto-generated"
+    }
+  ],
+  "Use of Premises and Subletting": [
+    {
+      "issue": "Subletting is prohibited under all circumstances, which may limit the tenant's flexibility.",
+      "suggested_clause": "Allow subletting with the landlord's prior written consent, which shall not be unreasonably withheld, instead of prohibiting it outright.",
       "rationale": "Auto-generated general-purpose guidance based on the clause category; recommend legal review before adopting this wording verbatim.",
       "source": "auto-generated"
     }

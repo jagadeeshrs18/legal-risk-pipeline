@@ -398,7 +398,7 @@ COMMERCIAL_CLAUSE_RULES = {
                 24,
             ),
             (
-                r"interest.{0,40}(?:2%|3%|4%|5%).{0,30}(?:month|monthly)",
+                r"interest.{0,40}(?<![\d.])(?:2|3|4|5)%.{0,30}(?:month|monthly)",
                 "The late-payment interest rate is high when calculated monthly.",
                 24,
             ),
@@ -964,6 +964,7 @@ def analyse(
     )
 
     findings = []
+    all_clauses = []
     detected = set()
 
     for number, (clause, precedents) in enumerate(
@@ -1039,13 +1040,30 @@ def analyse(
             default=0,
         )
 
+        suggestions = (
+            get_suggestions_for_hits(clause_type, risky_hits)
+            if risky_hits and not favors_you else []
+        )
+
+        # Full per-clause record, kept for every clause regardless of
+        # whether it's "interesting" enough to show in the report — this
+        # is what lets a revised document be reconstructed later (see
+        # legalrisk/document_builder.py), since a report built only from
+        # the filtered "findings" below would silently drop clean clauses.
+        all_clauses.append({
+            "number": number,
+            "type": clause_type,
+            "text": clause,
+            "score": effective_points,
+            "raw_score": raw_points,
+            "favors_you": favors_you,
+            "risky_hits": risky_hits,
+            "suggestions": suggestions,
+        })
+
         # Display risky clauses and sufficiently similar precedents.
         # Similarity alone does not increase risk points.
         if raw_points > 0 or confidence >= 0.72:
-            suggestions = (
-                get_suggestions_for_hits(clause_type, risky_hits)
-                if risky_hits and not favors_you else []
-            )
             findings.append({
                 "number": number,
                 "type": clause_type,
@@ -1203,4 +1221,5 @@ def analyse(
             key=lambda item: item["score"],
             reverse=True,
         ),
+        "clauses": all_clauses,
     }
