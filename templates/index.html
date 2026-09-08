@@ -8,8 +8,28 @@ body{background:#f4f7fb}
 .cat-card{height:100%;transition:transform .15s ease}
 .cat-card:hover{transform:translateY(-3px)}
 .cat-icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:1.3rem;color:#fff}
+#loadingOverlay{position:fixed;inset:0;background:rgba(19,42,83,.92);z-index:2000;display:none;
+  align-items:center;justify-content:center;color:#fff}
+#loadingOverlay .box{max-width:420px;text-align:center;padding:0 24px}
+#loadingOverlay .spinner-border{width:3rem;height:3rem}
+#loadingOverlay .progress{height:8px;border-radius:99px;background:#ffffff26}
 </style></head>
-<body><main class="container py-5">
+<body>
+
+<div id="loadingOverlay">
+  <div class="box">
+    <div class="spinner-border mb-3" role="status"></div>
+    <h5 class="mb-2">Analysing your document…</h5>
+    <p id="loadingStatus" class="mb-3 text-white-50 small">Extracting text from the PDF…</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:100%"></div>
+    </div>
+    <p class="mt-3 text-white-50 small mb-0">This can take up to a minute on the first run of the session
+    while the embedding model loads. Please don't close this tab.</p>
+  </div>
+</div>
+
+<main class="container py-5">
 
 <div class="hero p-4 p-md-5 mb-4">
   <span class="badge text-bg-info mb-3">BGE + ACORD</span>
@@ -104,5 +124,46 @@ function updateCommercialPerspective(subtypeSelect) {
   const options = COMMERCIAL_PERSPECTIVES[subtypeSelect.value] || [];
   perspectiveSelect.innerHTML = options.map(p => `<option value="${p}">${p}</option>`).join("");
 }
+
+// --- Loading overlay: shown while the server processes the upload. ---
+// Flask handles this request synchronously, so there is no real numeric
+// "% complete" to report -- the animated bar below is deliberately
+// indeterminate (constant motion, not a fake percentage), and the status
+// line below it cycles through the stages the backend actually runs
+// through in order, purely to reassure the user something is happening.
+const ANALYSIS_STAGES = [
+  "Extracting text from the PDF…",
+  "Checking the document matches this category…",
+  "Segmenting the document into clauses…",
+  "Classifying each clause and scanning for risk indicators…",
+  "Retrieving similar precedent clauses…",
+  "Building suggested rewordings…",
+  "Preparing your report…",
+];
+
+document.querySelectorAll("form").forEach(form => {
+  form.addEventListener("submit", function (e) {
+    const fileInput = form.querySelector('input[type="file"]');
+    if (fileInput && fileInput.required && !fileInput.files.length) return; // let native validation show
+
+    const overlay = document.getElementById("loadingOverlay");
+    const statusEl = document.getElementById("loadingStatus");
+    overlay.style.display = "flex";
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) submitBtn.disabled = true;
+
+    let stage = 0;
+    statusEl.textContent = ANALYSIS_STAGES[0];
+    setInterval(() => {
+      stage = Math.min(stage + 1, ANALYSIS_STAGES.length - 1);
+      statusEl.textContent = ANALYSIS_STAGES[stage];
+    }, 2200);
+    // Not cleared on purpose: the overlay stays until the browser
+    // navigates to the report page (or back here on an error/flash),
+    // at which point this whole document, and the interval with it, is
+    // discarded automatically.
+  });
+});
 </script>
 </main></body></html>
